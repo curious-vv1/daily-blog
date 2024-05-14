@@ -12,7 +12,7 @@ const Home = () => {
 
   const fetchDays = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/daily/get");
+      const response = await axios.get("https://daily-server-three.vercel.app/daily/get");
       setDays(response.data);
     } catch (error) {
       console.error("Error fetching days", error);

@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 8070;
 
 
 app.use(cors());
+app.use(cors({
+    origin: 'https://daily-client-4k2sc5zng-vivek-kumars-projects-c695c9fc.vercel.app/'
+  }));
 
 app.use(express.json());
 

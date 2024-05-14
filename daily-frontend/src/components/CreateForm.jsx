@@ -8,7 +8,7 @@ const CreateForm = ({ fetchDays }) => {
   const addData = async () => {
     const newDay = { title, content };
     try {
-      await axios.post("http://localhost:8080/daily/add", newDay);
+      await axios.post("https://daily-server-three.vercel.app/daily/add", newDay);
       setTitle("");
       setContent("");
       fetchDays(); // Fetch updated list of days after adding a new day
